@@ -33,6 +33,7 @@ StatCompre_ColorList = {
 	S = 'AA12AC',  -- shadow
 	L = '20FF20',  -- life
 	P = '6060FF',  -- mana
+	Q = 'EEEEEE',  -- haste
 };
 
 STATCOMPARE_SELFSTAT = {};
@@ -47,6 +48,9 @@ STATCOMPARE_EFFECTS = {
 	{ effect = "ENARMOR",		name = STATCOMPARE_ENARMOR,	 		format = "+%d",	lformat = "%d",	show = 0,		short = "EARM",	cat = "ATT",	opt="ShowEnArmor" },
 	{ effect = "DAMAGEREDUCE",	name = STATCOMPARE_DAMAGEREDUCE,	format = "+%d%%",	lformat = "%.2f%%",	show = 1,	short = "DR",	cat = "ATT",	opt="ShowDR" },
 
+	{ effect = "VAMPIRISM",		name = STATCOMPARE_VAMPIRISM, 			format = "+%d%%",	lformat = "%.2f%%",	show = 1,	short = "MC",	cat = "MISC",	opt="ShowAP" },
+	{ effect = "HASTE",	name = STATCOMPARE_SPEED, 		format = "+%d%%",	lformat = "%.2f%%",	show = 1,	short = "MC",	cat = "MISC",	opt="ShowAP" },
+	
 	{ effect = "ARCANERES",		name = STATCOMPARE_ARCANERES,		format = "+%d",	lformat = "%d",		short = "AR",	cat = "RES",	opt="ShowArcaneRes" },
 	{ effect = "FIRERES",		name = STATCOMPARE_FIRERES, 		format = "+%d",	lformat = "%d",		short = "IR",	cat = "RES",	opt="ShowFireRes" },
 	{ effect = "NATURERES", 	name = STATCOMPARE_NATURERES, 		format = "+%d",	lformat = "%d",		short = "NR",	cat = "RES",	opt="ShowNatureRes" },
@@ -99,9 +103,11 @@ STATCOMPARE_EFFECTS = {
 	{ effect = "MANAREG",		name = STATCOMPARE_MANAREG, 		format = "%d MP/5s",	short = "PR",	cat = "OBON",	opt="ShowManaRegen" },
 	{ effect = "MANAREGSPI",	name = STATCOMPARE_MANAREGSPI, 		format = "%d MP/2s",	lformat = "%d MP/2s",	show = 1,	short = "PR",	cat = "OBON",	opt="ShowManaRegenSPI" },
 
+	
+
 };
 
-STATCOMPARE_CATEGORIES = {'ATT', 'BON', 'SBON', 'RES', 'SKILL', 'OBON'};
+STATCOMPARE_CATEGORIES = {'ATT', 'MISC', 'BON', 'SBON', 'RES', 'SKILL', 'OBON'};
 
 function StatCompare_OnLoad()
 	InspectFrame_LoadUI();
@@ -636,6 +642,7 @@ function StatCompare_GetTooltipText(bonuses,bSelfStat)
 		if(StatCompare_CharStats_GetCritChance) then
 			baseval["CRIT"] = StatCompare_CharStats_GetCritChance();
 		end
+
 		baseval["PARRY"] = GetParryChance();
 		if(baseval["PARRY"] == 0) then
 			baseval["PARRY"] = nil;
