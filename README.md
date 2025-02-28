@@ -6,8 +6,7 @@ Added Vampirism and Haste.
 
 
 ## Screenshot
-
-[https://imgur.com/a/NAjnCOx](https://i.imgur.com/FhqGBDv.png)
+https://i.imgur.com/FhqGBDv.png
 
 ## Installation
 1. Close any instance of WoW
