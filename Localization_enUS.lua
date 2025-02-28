@@ -11,6 +11,7 @@ function SC_Localization_enUS()
 
 	STATCOMPARE_CAT_ATT = "States";
 	STATCOMPARE_CAT_RES = "Resistance";
+	STATCOMPARE_CAT_MISC = "Misc";
 	STATCOMPARE_CAT_SKILL = "Skills";
 	STATCOMPARE_CAT_BON = "Melee & Ranged Attack";
 	STATCOMPARE_CAT_SBON = "Spells";
@@ -27,7 +28,12 @@ function SC_Localization_enUS()
 	STATCOMPARE_ARMOR = "Armor";
 	STATCOMPARE_ENARMOR = "Reinforced Armor";
 	STATCOMPARE_DAMAGEREDUCE = "Damage Reduce";
-
+	
+	STATCOMPARE_SPEED = "Attack and Casting Speed";
+	STATCOMPARE_VAMPIRISM = "Vampirism";
+	
+	STATCOMPARE_PEN = "Armor Penetration";
+	
 	STATCOMPARE_ARCANERES	= "Arcane Resistance";	
 	STATCOMPARE_FIRERES	= "Fire Resistance";
 	STATCOMPARE_NATURERES	= "Nature Resistance";
@@ -131,6 +137,8 @@ function SC_Localization_enUS()
 		{ pattern = "Increases healing done by Lesser Healing Wave by up to (%d+)%.", effect = "LESSERHEALWAVE"},
 		{ pattern = "Increases damage done by Chain Lightning and Lightning Bolt by up to (%d+)%.", effect = {"CHAINLIGHTNING","LIGHTNINGBOLT"}},
 		{ pattern = "Increases damage done by Earth Shock, Flame Shock, and Frost Shock by up to (%d+)%.", effect = {"EARTHSHOCK","FLAMESHOCK","FROSTSHOCK"}}, 
+		{ pattern = "(%d+)%%% of damage dealt is returned as healing.", effect = "VAMPIRISM" },
+		{ pattern = "Increases your attack and casting speed by (%d+)%%%.", effect = "HASTE" },
 	};
 
 
@@ -192,11 +200,16 @@ function SC_Localization_enUS()
 		["Reinforced Armor"]			= "ENARMOR",
 		["Defense"]			= "DEFENSE",
 		["Increased Defense"]		= "DEFENSE",
+		["returned as healing"]			= "VAMPIRISM",
+		["Vampirism"]			= "VAMPIRISM",
+		["Haste"]			= "HASTE",
 	};
 
 	STATCOMPARE_OTHER_PATTERNS = {
 		{ pattern = "(%d+) Block", effect = "BLOCK"},
 		{ pattern = "(%d+) Armor", effect = "ARMOR"},
+		{ pattern = "+(%d+)%%% Haste", effect = "HASTE"},
+		{ pattern = "+(%d+)%%% Vampirism", effect = "VAMPIRISM"},
 		{ pattern = "Health Regen (%d+) per 5 sec%.", effect = "HEALTHREG" },
 		{ pattern = "Health Regen (%d+) every 5 sec%.", effect = "HEALTHREG" },
 		{ pattern = "Mana Regen (%d+) per 5 sec%.", effect = "MANAREG" },
