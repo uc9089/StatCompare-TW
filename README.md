@@ -1,6 +1,10 @@
 # StatCompare
 StatCompare, adds a panel next to the Character Panel, from http://addons.us.to/addon/statcompare
 
+# Turtle-Wow Changes
+Added Vampirism and Haste.
+
+
 ## Screenshot
 
 ![statcompare](https://user-images.githubusercontent.com/24671466/27562912-1a698a34-5acf-11e7-9bac-b029c9160eb4.png)
