@@ -247,7 +247,7 @@ function StatScanner_ScanPassive(line)
 			if(p.value) then
 				StatScanner_AddValue(p.effect, p.value);
 			elseif(value) then
-				if(value=="s1")then value=10; end -- cwow°þÆ¤µ¶·­Òë´íÎó
+				if(value=="s1")then value=10; end -- cwowÂ°Ã¾Ã†Â¤ÂµÂ¶Â·Â­Ã’Ã«Â´Ã­ÃŽÃ³
 				StatScanner_AddValue(p.effect, value);
 			end
 			found = true;
