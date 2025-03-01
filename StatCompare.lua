@@ -50,6 +50,7 @@ STATCOMPARE_EFFECTS = {
 
 	{ effect = "VAMPIRISM",		name = STATCOMPARE_VAMPIRISM, 			format = "+%d%%",	lformat = "%.2f%%",	show = 1,	short = "MC",	cat = "MISC",	opt="ShowAP" },
 	{ effect = "HASTE",	name = STATCOMPARE_SPEED, 		format = "+%d%%",	lformat = "%.2f%%",	show = 1,	short = "MC",	cat = "MISC",	opt="ShowAP" },
+	{ effect = "ARMORPEN",	name = STATCOMPARE_ARMORPEN, 		format = "+%d",	lformat = "%d",		show = 1,	short = "MA",	cat = "MISC",	opt="ShowAP" },
 	
 	{ effect = "ARCANERES",		name = STATCOMPARE_ARCANERES,		format = "+%d",	lformat = "%d",		short = "AR",	cat = "RES",	opt="ShowArcaneRes" },
 	{ effect = "FIRERES",		name = STATCOMPARE_FIRERES, 		format = "+%d",	lformat = "%d",		short = "IR",	cat = "RES",	opt="ShowFireRes" },
@@ -64,7 +65,8 @@ STATCOMPARE_EFFECTS = {
 	{ effect = "HERBALISM",		name = STATCOMPARE_HERBALISM, 		format = "+%d",		short = "YHER",	cat = "SKILL",	opt="ShowHerbalism" },
 	{ effect = "SKINNING", 		name = STATCOMPARE_SKINNING, 		format = "+%d",		short = "YSKI",	cat = "SKILL",	opt="ShowSkinning" },
 	{ effect = "FISHING",		name = STATCOMPARE_FISHING,		format = "+%d",		short = "YFIS",	cat = "SKILL",	opt="ShowFishing" },
-
+	{ effect = "SWIMMING",		name = STATCOMPARE_SWIMMING,		format = "+%d%%",		short = "SWI",	cat = "SKILL",	opt="ShowFishing" },
+	
 	{ effect = "ATTACKPOWER",	name = STATCOMPARE_ATTACKPOWER, 		format = "+%d",	lformat = "%d",		show = 1,	short = "MA",	cat = "BON",	opt="ShowAP" },
 	{ effect = "ATTACKPOWERUNDEAD",	name = STATCOMPARE_ATTACKPOWERUNDEAD, 		format = "+%d",	lformat = "%d",		show = 1,	short = "MA",	cat = "BON",	opt="ShowAP" },
 	{ effect = "CRIT",		name = STATCOMPARE_CRIT, 			format = "+%d%%",	lformat = "%.2f%%",	show = 1,	short = "MC",	cat = "BON",	opt="ShowCrit" },
@@ -101,6 +103,7 @@ STATCOMPARE_EFFECTS = {
 	{ effect = "HEALTHREG",		name = STATCOMPARE_HEALTHREG,		format = "%d HP/5s",	short = "LR",	cat = "OBON",	opt="ShowHealthRegen" },
 	{ effect = "MANA",		name = STATCOMPARE_MANA, 			format = "+%d",	lformat = "%d",	show = 1,	short = "PP",	cat = "OBON",	opt="ShowMana" },
 	{ effect = "MANAREG",		name = STATCOMPARE_MANAREG, 		format = "%d MP/5s",	short = "PR",	cat = "OBON",	opt="ShowManaRegen" },
+	{ effect = "MEDITATION",		name = STATCOMPARE_MEDITATION, 		format = "%d%%",	short = "PR",	cat = "OBON",	opt="ShowManaRegen" },
 	{ effect = "MANAREGSPI",	name = STATCOMPARE_MANAREGSPI, 		format = "%d MP/2s",	lformat = "%d MP/2s",	show = 1,	short = "PR",	cat = "OBON",	opt="ShowManaRegenSPI" },
 
 	
