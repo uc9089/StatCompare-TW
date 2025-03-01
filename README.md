@@ -2,7 +2,7 @@
 StatCompare, adds a panel next to the Character Panel, from http://addons.us.to/addon/statcompare
 
 # Turtle-Wow Changes
-Added Vampirism and Haste.
+Added Vampirism, Haste, Armor Penetration, Swimming Speed, etc.
 
 
 ## Screenshot
