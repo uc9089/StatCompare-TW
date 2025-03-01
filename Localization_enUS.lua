@@ -231,8 +231,6 @@ function SC_Localization_enUS()
 		{ pattern = "Lesser Mana Oil", effect = "MANAREG", value = 8 },
 		{ pattern = "Brilliant Mana Oil", effect = { "MANAREG", "HEAL"}, value = {12, 25} },
 		{ pattern = "Eternium Line", effect = "FISHING", value = 5 },
-		{ pattern = "Enchant: Fiery Blaze", effect = "FISHING", value = 100 },
-		{ pattern = "Classes: Paladin", effect = "SKINNING", value = 100 },
 	};
 
 	-- Spells Related
