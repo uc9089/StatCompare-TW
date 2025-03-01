@@ -32,7 +32,7 @@ function SC_Localization_enUS()
 	STATCOMPARE_SPEED = "Attack and Casting Speed";
 	STATCOMPARE_VAMPIRISM = "Vampirism";
 	
-	STATCOMPARE_PEN = "Armor Penetration";
+	STATCOMPARE_ARMORPEN = "Armor Penetration";
 	
 	STATCOMPARE_ARCANERES	= "Arcane Resistance";	
 	STATCOMPARE_FIRERES	= "Fire Resistance";
@@ -47,7 +47,8 @@ function SC_Localization_enUS()
 	STATCOMPARE_HERBALISM	= "Herbalism";
 	STATCOMPARE_SKINNING	= "Skinning";
 	STATCOMPARE_DEFENSE	= "Defense";
-		
+	STATCOMPARE_SWIMMING = "Swimming Speed";
+	
 	STATCOMPARE_BLOCK	= "Block";
 	STATCOMPARE_TOBLOCK	= "Chance to block";
 	STATCOMPARE_DODGE	= "Dodge";
@@ -73,6 +74,7 @@ function SC_Localization_enUS()
 	STATCOMPARE_NATURECRIT	= "Crit. Nature Spell";
 	STATCOMPARE_HEALTHREG	= "Life Regeneration";
 	STATCOMPARE_MANAREG	= "Mana Regeneration";
+	STATCOMPARE_MEDITATION	= "Meditation";
 	STATCOMPARE_MANAREGSPI	= "Mana Regen. with Spirit";
 	STATCOMPARE_HEALTH	= "Life";
 	STATCOMPARE_MANA	= "Mana";
@@ -132,6 +134,7 @@ function SC_Localization_enUS()
 		{ pattern = "Improves your chance to get a critical strike with Holy spells by (%d+)%%%.", effect = "HOLYCRIT" },
 		{ pattern = "Skinning +(%d+)%.", effect = "SKINNING" },
 		{ pattern = "Increased Fishing +(%d+)%.", effect = "FISHING"},
+		{ pattern = "Increases swim speed by (%d+)%%%.", effect = "SWIMMING"},
 		{ pattern = "Decreases the magical resistances of your spell targets by (%d+)%.", effect = "DETARRES" },
 		{ pattern = "Improves your chance to get a critical strike with Nature spells by (%d+)%%%.", effect = "NATURECRIT" },
 		{ pattern = "Increases healing done by Lesser Healing Wave by up to (%d+)%.", effect = "LESSERHEALWAVE"},
@@ -139,6 +142,8 @@ function SC_Localization_enUS()
 		{ pattern = "Increases damage done by Earth Shock, Flame Shock, and Frost Shock by up to (%d+)%.", effect = {"EARTHSHOCK","FLAMESHOCK","FROSTSHOCK"}}, 
 		{ pattern = "(%d+)%%% of damage dealt is returned as healing.", effect = "VAMPIRISM" },
 		{ pattern = "Increases your attack and casting speed by (%d+)%%%.", effect = "HASTE" },
+		{ pattern = "Your attacks ignore (%d+) of the target's armor.", effect = "ARMORPEN" },
+		{ pattern = "Allows (%d+)%%% of your Mana regeneration to continue while casting.", effect = "MEDITATION" },
 	};
 
 
@@ -190,6 +195,7 @@ function SC_Localization_enUS()
 		["Increases Healing"] 		= "HEAL",
 		["mana every 5 sec"] 		= "MANAREG",
 		["Mana Regen"]			= "MANAREG",
+		["Meditation"]			= "MEDITATION",
 		["Damage"] 				= "DMG",
 		["Critical"]			= "CRIT",
 		["Critical Hit"] 		= "CRIT",
@@ -203,13 +209,16 @@ function SC_Localization_enUS()
 		["returned as healing"]			= "VAMPIRISM",
 		["Vampirism"]			= "VAMPIRISM",
 		["Haste"]			= "HASTE",
+		["Armor Penetration"]			= "ARMORPEN",
 	};
 
 	STATCOMPARE_OTHER_PATTERNS = {
 		{ pattern = "(%d+) Block", effect = "BLOCK"},
 		{ pattern = "(%d+) Armor", effect = "ARMOR"},
+		{ pattern = "Blocking", effect = "TOBLOCK", value = 2},
 		{ pattern = "+(%d+)%%% Haste", effect = "HASTE"},
 		{ pattern = "+(%d+)%%% Vampirism", effect = "VAMPIRISM"},
+		{ pattern = "Armor Penetration +(%d+)", effect = "ARMORPEN"},
 		{ pattern = "Health Regen (%d+) per 5 sec%.", effect = "HEALTHREG" },
 		{ pattern = "Health Regen (%d+) every 5 sec%.", effect = "HEALTHREG" },
 		{ pattern = "Mana Regen (%d+) per 5 sec%.", effect = "MANAREG" },
@@ -222,6 +231,8 @@ function SC_Localization_enUS()
 		{ pattern = "Lesser Mana Oil", effect = "MANAREG", value = 8 },
 		{ pattern = "Brilliant Mana Oil", effect = { "MANAREG", "HEAL"}, value = {12, 25} },
 		{ pattern = "Eternium Line", effect = "FISHING", value = 5 },
+		{ pattern = "Enchant: Fiery Blaze", effect = "FISHING", value = 100 },
+		{ pattern = "Classes: Paladin", effect = "SKINNING", value = 100 },
 	};
 
 	-- Spells Related
