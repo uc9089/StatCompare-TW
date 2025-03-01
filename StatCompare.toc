@@ -12,5 +12,5 @@ Localization_enUS.lua
 Localization.lua
 SCOptions.lua
 StatScanner.lua
-StatCompare.lua
+StatCompare-TW.lua
 StatCompare.xml
