@@ -142,6 +142,7 @@ function SC_Localization_enUS()
 		{ pattern = "Increases damage done by Earth Shock, Flame Shock, and Frost Shock by up to (%d+)%.", effect = {"EARTHSHOCK","FLAMESHOCK","FROSTSHOCK"}}, 
 		{ pattern = "(%d+)%%% of damage dealt is returned as healing.", effect = "VAMPIRISM" },
 		{ pattern = "Increases your attack and casting speed by (%d+)%%%.", effect = "HASTE" },
+		{ pattern = "+(%d+)% Haste", effect = "HASTE" },
 		{ pattern = "Your attacks ignore (%d+) of the target's armor.", effect = "ARMORPEN" },
 		{ pattern = "Allows (%d+)%%% of your Mana regeneration to continue while casting.", effect = "MEDITATION" },
 	};
